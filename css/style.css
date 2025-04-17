@@ -1,0 +1,149 @@
+h1,h2,h3,h4{   
+      letter-spacing: 7px;
+      word-spacing: 3px;
+      text-align: center;
+      color: #3D550C;
+      font-family: Times New Roman;
+
+    }
+p{
+      text-align: justify; text-indent: 100px;
+      line-height: 1.5;
+      letter-spacing: 1.5px; font-size: 18px;
+    }
+.mix{
+  color: white;
+  text-align: left;
+} 
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+/*section to avoid overlapiing in video background*/
+.section {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+/*video background attributes*/
+#myVideo {
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+/*z-index to overlay content in video background*/
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper {
+    width: 960px;
+    height: 100%;
+    z-index: 20;
+}
+.logosize{
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*z-indeex over*/
+.gridbg{
+  background-color: lightcyan;
+}
+.zoom {
+  overflow: hidden;
+}
+.zoom img {
+  transition: transform .5s ease;
+}
+.zoom:hover img {
+  transform: scale(1.2);
+}
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  justify-content: center;
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 20px;
+  padding: 100px;
+}
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+.a {
+  position: relative;
+}
+.a:hover .overlay {
+  height: 100%;
+}
+.b:hover .overlay {
+  height: 100%;
+
+}
+/*wrap both the image and the overlay div in an another element , 
+position: relative since it is the parent of both the image and the overlay.*/
+.inner-wrap {
+  position: relative;
+}
+.navbar{
+  background-color: #59981A;
+}
+.imgmar{width: 350px; height: 500px;}
+button:hover{
+      background-color: lavender;
+    }
+    input:focus{
+      background-color: lightsteelblue;
+    }
+  .pad{
+    padding-top: 150px;
+  }
+  .bor{
+    border: 3px outset;
+  }
+  #padd{
+    padding-top: 30px;
+  }
+  .imground{
+    width: 250px; height: 250px;
+  }
+      .list-group{
+      position: sticky;
+      top: 50px;
