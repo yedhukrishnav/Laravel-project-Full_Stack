@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://kit.fontawesome.com/2afb80020b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+			<!-- 	navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+	<img src="images/icon.jpg" height="70px" width="70px">
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-center " id="navbarCollapse"> 
+		<div class="navbar-nav mt-4">
+			<a href="index.html" class="nav-item nav-link  h4 font-weight-light text-white">Home</a>
+			<a href="rooms.html" class="nav-item nav-link  h4 font-weight-light text-white">Rooms</a>
+			<a href="dining.html" class="nav-item nav-link  h4 font-weight-light text-white">Dinings</a>
+			<a href="exp.html" class="nav-item nav-link  h4 font-weight-light text-white">Experience</a>
+			<a href="#" class="nav-item nav-link  h4 font-weight-light active text-white">About Us</a>
+		</div>
+	</div>
+</nav>
+
+<!-- our team using card with space -->
+<div class="container mt-2">
+	<h1 class="text-center mt-5">OUR TEAM</h1>
+	<div class="row">
+		<div class="card-deck">
+			<div class="card">
+				<img src="images/ceo.jpg" class="card-img-top img-fluid">
+				<div class="card-body">
+					<h5 class="text-center font-weight-light">Karthik Surya</h5>
+					<h6 class="font-weight-normal">Karthik Surya, is an Indian-American business executive. He is the chief executive officer of BLEU resorts. Born in Madurai, India, Pichai earned his degree from IIT Kharagpur in metallurgical engineering</h6>
+				</div>
+				<div class="card-footer">
+					<h5 class="text-center">CEO</h5>
+				</div>
+			</div>
+			<div class="card ml-5 mr-5">
+				<img src="images/manager.jpg" class="card-img-top img-fluid">
+				<div class="card-body">
+					<h5 class="text-center font-weight-light">Anand Ajay</h5>
+					<h6 class="font-weight-normal">Anand Ajay is a Lucknow-born and bred Indian celebrity chef, Masterchef India judge, author and restaurateur. He is the managing director of BLEU Resorts.</h6>
+				</div>
+				<div class="card-footer">
+					<h5 class="text-center">Manager</h5>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/chef.png" class="card-img-top img-fluid">
+			<div class="card-body">
+				<h5 class="text-center font-weight-light">Manish Mehrotra</h5>
+				<h6 class="font-weight-normal">Manish Mehrotra, Corporate Chef, Indian Accent New Delhi, New York. Indian Accent offers an inventive approach to Indian cuisine. He is the main Chef of BLEU Resorts</h6>
+			</div>
+			<div class="card-footer">
+				<h5 class="text-center">Main Chef</h5>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- connect using popup and bootstrap form -->
+<div class="mt-5 jumbotron container">
+<h4>Connect With Us</h4>
+<p>Sign UP with your E-mail and connect with us to send your quries, complaints suggestion.. etc
+we have a 24x7 E-mail support.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-dark mt-5" data-toggle="modal" data-target="#myModal">
+  Connect
+</button>
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- modal header -->
+			<div class="modal-header">
+				<h5 class="modal-title">Connect</h5>
+				<button type="button" class="close" data-dismiss="modal">&times</button>
+			</div>
+			<!-- modalbody -->
+			<div class="modal-body">
+<!-- form -->
+<form  style="border: 2px solid orangered; width: 100%; padding: 20px;">
+	<div class="form-group">
+	<label>Enquiry Type:</label>
+		<select class="form-control">
+			<option value="hotel">Hotel Reservation</option>
+			<option value="exp">Experience Enquiry</option>
+			<option value="din">Dining Enquiry</option>
+			<option value="celb">Celebration Enquiry</option>
+			<option value="off">Offer Enquiry</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+	<label>Name:</label>
+	<input type="text" name="name" class="form-control" required placeholder="Enter your Name">
+	</div>
+
+	<div class="form-group">
+		<label>Email</label>
+		<input type="email" name="" class="form-control" placeholder="Email">
+	</div>
+
+	<div class="form-group">
+	<label>Password</label>
+	<input type="password" name="" class="form-control" placeholder="Password">
+	</div>
+
+	<div class="form-group">
+	<label>MESSAGE:</label>
+	<textarea class="form-control" required rows="9" cols="50"></textarea>
+	</div>
+
+	<div>
+	<input type="checkbox" name="">
+	<label>  Register for updates about Offers, events and more.</label>
+	</div>
+
+	<button type="submit" class="btn btn-success"> Submit</button>
+	</div>
+</form>
+
+			<!-- modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+			</div>
+
+		</div><!-- modal body close-->
+	</div>
+</div>
+</div>
+<!-- Contact us -->
+<div class="jumbotron container">
+	<h4>BLEU resorts & Central Reservations</h4>
+	<p class="mt-3 mb-4">BLEU's multilingual Reservations team are always available to help you with your travel planning, from booking a single night to multi-resort itineraries combining BLEU’s own Private Jet and Yachts. Operating 24 hours a day, 7 days a week to be at your service, to plan your ultimate BLEU experience.</p>
+	<ul type="none"> 
+		<li><p><strong>Email:</strong> reservations@bleu.com</p></li>
+		<li><p><strong>Direct Dial:</strong>
+		Tel: + 65 3165 4865
+		Tel: +1 754 216 7830
+		Tel: + 81 3 4577 7920</h5></li>
+		<li><p>Call us from the IND toll-free
+		1-833-654-BLEU (2626)</p></li>
+	</ul>
+</div>
+<!-- footer -->
+<div class="text-white mt-3" style="background-color: 	#59981A;">
+	<div class="row" >
+
+		<div class="col-md-4 mt-3" >
+		<ul type="none">
+		<li><img src="images/icon.jpg" height="100px" width="100px"></li>
+		<li><h5 class="mix">BLEU RESORT 336/0, Village Calwaddo, Benaulim, Goa - 403716</h5></li>
+		</div>
+
+		<div class="col-md-4 mt-5">
+		<h3 class="mix">LINKS</h3>
+		<ul>
+		<li><a href="index.html" class="text-white">Home</a></li>
+		<li><a href="rooms.html" class="text-white">Rooms</a></li>
+		<li><a href="dining.html" class="text-white">Dining</a></li>
+		<li><a href="exp.html" class="text-white">Experience</a></li>
+		</ul>
+		</div>
+
+		<div class="col-md-4 mt-5">
+		<h3 class="mix">Contact us</h3>
+		<ul type="none">
+			<li><i class="fa-brands fa-facebook-f mr-3"></i>Blew_Benaulim</li>
+			<li><i class="fa-brands fa-twitter mr-2"></i> Blewbenaulim</li>
+			<li><i class="fa-brands fa-square-google-plus mr-2"></i> Blewbanaulim@gmail.com</li>
+			<li><i class="fa-regular fa-copyright mr-2"></i>Copyright protected</li>
+		</ul>
+		</div>
+	</div>
+
+	<div class="row pb-3">
+		<div class="col-md-12 justify-content-center">
+			<h2 class="text-white mt-2">SIGN UP FOR NEWS LETTERS</h2>
+		<div class="form-inline">
+			<form class="ml-auto mr-auto">
+				<input type="text" name="">
+				<button type="button" class="btn btn-warning "> SIGN IN</button>
+			</form>
+		</div>
+		</div>
+	</div>
+</div>
+ <!-- main container closing -->
+</div>	
+</body>
+</html>
